@@ -2,12 +2,20 @@
     "name": "Explaain",
     "version": "1.0",
     "manifest_version": 2,
-    "description": "Gotta catch Youtube events!",
+    "description": "News 2.0",
     "permissions": ["tabs", "http://*/*"],
     "content_scripts" : [{
-        "matches" : [ "http://*/"],
+        "matches" : [ "*://*/*"],
         "js" : ["script.js"]
     }],
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "browser_action": {
+      "default_icon": "icon48.png"
+    },
     "web_accessible_resources": [
       "pageScript.js",
       "jquery.min.js"
