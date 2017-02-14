@@ -1,11 +1,12 @@
 {
     "name": "Explaain",
-    "version": "1.0",
+    "version": "1.2.0",
     "manifest_version": 2,
-    "description": "News 2.0",
+    "description": "Bring news articles to life",
     "permissions": ["tabs", "http://*/*"],
     "content_scripts" : [{
         "matches" : [ "*://*/*"],
+        "exclude_matches": ["http://cms.explaain.com/", "http://cms.dev.explaain.com/", "http://cms.explaain.com/", "http://explaain-cms.herokuapp.com/", "https://explaain-cms.herokuapp.com/", "http://localhost:5003/"],
         "js" : ["script.js"]
     }],
     "icons": {
